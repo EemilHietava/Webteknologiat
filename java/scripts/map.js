@@ -8,4 +8,3 @@ function showMap() {
     let iframeElement = document.getElementById('map-frame');
     iframeElement.src = place;
 }
-
