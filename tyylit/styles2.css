@@ -11,7 +11,7 @@ h2 {
     color: #0056b3;
 }
 
-/* Linkkien tyyli */
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -22,7 +22,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Listojen tyyli */
 ul {
     background: #ffffff;
     padding: 15px;
@@ -35,7 +34,6 @@ ul li {
     font-size: 1.1em;
 }
 
-/* Taulukon tyyli */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -60,7 +58,7 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Kuva */
+
 img {
     display: block;
     margin: 0 auto;

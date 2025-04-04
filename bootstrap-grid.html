@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid esimerkki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="tyylit/grid.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar fixed-top bg-primary">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Grid asetteluesimerkki</span>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+                <form class="container-fluid justify-content-start">
+                    <button class="btn btn-dark me-2" type="button">Etusivu</button>
+                    <button class="btn btn-sm btn-dark" type="button">Yhteystiedot</button>
+                    <button class="btn btn-sm btn-dark" type="button">Hinnasto</button>
+                    <button class="btn btn-sm btn-dark" type="button">Lisätiedot</button>
+                    <button class="btn btn-sm btn-dark" type="button">Jotain muuta</button>
+                </form>
+            </div>
+        </nav>
+        <div class="grid-container">
+            <div class="sidebar">
+                <h4>Linkkejä</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://lab.fi" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-title="Default tooltip">LAB</a></li>
+                    <li class="list-group-item"><a href="https://lut.fi" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-title="Default tooltip">LUT</a></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="card text-center col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                Ensimmäinen kortti
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kortin otsikko</h5>
+                                <p class="card-text">Tässä lukee jotain todella järkevää.</p>
+                                <a href="#" class="btn btn-success">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                Toinen kortti
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kortin otsikko</h5>
+                                <p class="card-text">Tässä lukee jotain todella järkevää.</p>
+                                <a href="#" class="btn btn-danger">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                Kolmas kortti
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kortin otsikko</h5>
+                                <p class="card-text">Tässä lukee jotain todella järkevää.</p>
+                                <a href="#" class="btn btn-warning">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                Neljäs kortti
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kortin otsikko</h5>
+                                <p class="card-text">Tässä lukee jotain todella järkevää.</p>
+                                <a href="#" class="btn btn-info">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                Viides kortti
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kortin otsikko</h5>
+                                <p class="card-text">Tässä lukee jotain todella järkevää.</p>
+                                <a href="#" class="btn btn-dark">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center col-6 col-md-4 col-lg-2">
+                        <div class="card">
+                            <div class="card-header">
+                                Kuudes kortti
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Kortin otsikko</h5>
+                                <p class="card-text">Tässä lukee jotain todella järkevää.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+
+            <script> const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+</body>
+
+</html>
