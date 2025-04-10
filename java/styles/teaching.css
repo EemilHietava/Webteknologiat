@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+p {
+    background-color: white;
+    padding: 10px;
+    border-left: 3px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+img {
+    border: 2px solid #555;
+    margin-top: 10px;
+}
