@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 0;
 }
 
 h1 {
@@ -27,12 +27,6 @@ footer {
     background-color: #ffffff;
     color: black;
     padding: 20px 0;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
 }
 
 .navbar {
