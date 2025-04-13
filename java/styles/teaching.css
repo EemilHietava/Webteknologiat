@@ -23,15 +23,23 @@ img {
     margin-top: 10px;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1030;
-}
-
 footer {
     background-color: #ffffff;
     color: black;
     padding: 20px 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
 }
