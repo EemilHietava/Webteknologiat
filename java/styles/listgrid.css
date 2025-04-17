@@ -14,12 +14,3 @@
 .list-container {
     display: block;
 }
-
-.onClick {
-    cursor: pointer;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
-}
