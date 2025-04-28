@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link type="text/css" href="styles/pizza.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Tilaa pizza</h1>
+        <div class="image">
+            <img src="images/pizza.avif" alt="pizza" width="250">
+        </div>
+        <h2>Valitse koko</h2>
+        <label for="pizza-size">koko:</label>
+        <select id="pizza-size" onchange="updatePrice()">
+            <option value="6">Tavallinen pizza</option>
+            <option value="12">Perhepizza</option>
+        </select>
+
+        <h3>Valitse täytteet:</h3>
+        <div>
+            <label><input type="checkbox" class="topping" value="2" onchange="updatePrice()"> Ananas</label><br>
+            <label><input type="checkbox" class="topping" value="2" onchange="updatePrice()"> Kinkku</label><br>
+            <label><input type="checkbox" class="topping" value="2" onchange="updatePrice()"> Pepperoni</label><br>
+            <label><input type="checkbox" class="topping" value="2" onchange="updatePrice()"> Aurajuusto</label><br>
+            <label><input type="checkbox" class="topping" value="2" onchange="updatePrice()"> Tonnikala</label>
+        </div>
+        <h3>Hinta yhteensä:</h3>
+        <input type="text" id="total-price" readonly value="0">
+        <div class="form-group">
+            <button type="button" onclick="resetSelections()" class="btn btn-primary">Tilaa</button>
+        </div>
+    </div>
+    <script src="scripts/pizza.js"></script>
+</body>
+
+</html>

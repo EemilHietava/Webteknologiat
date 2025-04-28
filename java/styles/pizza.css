@@ -1,0 +1,20 @@
+.container {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.checkbox,
+.checkbox label {
+    width: 200px;
+}
+
+.checkbox label {
+    text-align: left;
+    float: right;
+}
+
+.checkbox input {
+    margin-left: 16px;
+    float: left;
+}
